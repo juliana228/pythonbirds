@@ -1,2 +1,2 @@
 class Pessoa:
-    pass
+    def comprimentar(self):
