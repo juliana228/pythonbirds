@@ -1,19 +1,19 @@
-class Carro:
-    def __init__(self, marca, preco, cor):
-        self.marca = marca
-        self.cor = cor
-        self.preco = preco
+class Pessoa:
+    def __init__(self,nome='Bey',idade=40):
+        self.nome = nome
+        self.idade = idade
 
-    def ligar(self):
-        print('Ligando o carro')
+    def cumprimentar(self):
+        print(f'Olá {p.nome}')
 
-    def desligar(self):
-        print('desligando o carro')
+p = Pessoa()
+p.cumprimentar()
+print(p.nome)
+print(p.idade)
+p.nome = 'Rih'
+print(p.nome)
 
-    def ExibirInformacoes(self):
-        print(f'O carro é da marca {self.marca}, custa R$ {self.preco} e possui cor {self.cor}')
 
-carro1 = Carro('Honda',150000,'vermelha')
-carro1.ligar()
-carro1.desligar()
-carro1.ExibirInformacoes()
+
+
+
