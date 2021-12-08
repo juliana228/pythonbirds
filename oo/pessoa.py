@@ -1,17 +1,18 @@
 class Pessoa:
-    def __init__(self,nome='Bey',idade=40):
+    olhos = 2
+    def __init__(self,nome=None,idade=40,*filhos):
         self.nome = nome
         self.idade = idade
-
-    def cumprimentar(self):
-        print(f'Olá {p.nome}')
+        self.filhos = list(filhos)
 
 p = Pessoa()
-p.cumprimentar()
-print(p.nome)
-print(p.idade)
-p.nome = 'Rih'
-print(p.nome)
+blue = Pessoa(nome='blue')
+beyonce = Pessoa(blue,idade=40)
+print(Pessoa.olhos)
+print(blue.olhos)
+print(beyonce.olhos)
+
+
 
 
 
